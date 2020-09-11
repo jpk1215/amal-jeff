@@ -6,6 +6,8 @@ const port = process.env.PORT || 3000
 
 app.use(morgan('dev'));
 
+app.use('/assets', express.static(`${__dirname}/assets`));
+
 app.get('/', (req, res) => {
     res.sendFile(`${__dirname}/index.html`);
 })

@@ -1,22 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Amal+Jeff</title>
 
-    <title>Hello, world!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Off Canvas Menu -->
+    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+    <!-- Color Switcher -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vegas.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
   </head>
   <body>
-    <h1>Hello, world!</h1>
 
-    <!-- Optional JavaScript -->
+    <div class="bg-wraper overlay has-vignette">
+      <div id="example" class="slider opacity-50 vegas-container" style="height: 983px;"></div>
+    </div>
+
+    <!-- Coundown Section Start -->
+    <section class="countdown-timer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="heading-count">
+              <h2>WE ARE GETTING MARRIED IN</h2>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row time-countdown justify-content-center">
+              <div id="clock" class="time-count"></div>
+            </div>
+            <p>
+            Bolt - High quality Bootstrap HTML5 Coming Soon Landing Page Template<br>
+            Comes with fully responsive layout, Cool features, and Clean design.
+            </p>
+            <div class="button-group">
+              <a href="#" class="btn btn-common">Notify Me</a>
+              <a href="#" class="btn btn-border">About Us</a>
+            </div>
+            <div class="social mt-4">
+              <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
+              <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
+              <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
+              <a class="google" href="#"><i class="lni-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Coundown Section End -->
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/vegas.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script> 
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+
+    <script type="text/javascript">
+      $("#example").vegas({
+          timer: false,
+          delay: 6000,
+          transitionDuration: 2000,
+          transition: "blur",
+          slides: [
+              { src: "assets/img/slide1.jpg" },
+              { src: "assets/img/slide2.jpg" },
+              { src: "assets/img/slide3.jpg" }
+          ]
+      });
+    </script>
+      
   </body>
 </html>
