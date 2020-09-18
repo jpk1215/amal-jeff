@@ -1,0 +1,11 @@
+body {
+    background-color: #F4E7E3;
+    padding: 20%;
+}
+
+.center-div {
+  margin: 0 auto;
+  background-color: #ccc;
+  border-radius: 3px;
+  padding: 10%;
+}
